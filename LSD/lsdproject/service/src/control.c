@@ -407,7 +407,7 @@ void heart_pack_deal(MSG *mess, int *flag)
 	}
 	if(*flag == 1)
 	{  
-		printf(LIGHT_RED"%s\t%s\n"NONE,mess->name,mess->data);
+		printf(LIGHT_RED"%ld\t%s\t%s\n"NONE, (long int)gettid(), mess->name,mess->data);
 	}
 }
 

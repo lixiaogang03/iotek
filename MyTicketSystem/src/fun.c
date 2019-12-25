@@ -218,7 +218,7 @@ void buy_ticket(TNODE *thead,UNODE *usr,WNODE *whead)
 	if(usr == NULL)	return;
 	if(whead == NULL)	return;
 	
-	//extern ADMIN admin;
+	extern ADMIN admin;
 	extern PROFIT profit;
 	char cho = '\0'; 
 	TICKET ticket;

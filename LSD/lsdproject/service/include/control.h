@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+#include <sys/syscall.h>
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <pthread.h>
@@ -18,6 +19,8 @@
 #include "../include/link_online.h"
 #include "../include/link_daily.h"
 #include "../include/view.h"
+
+#define gettid() syscall(__NR_gettid)
 
 
 #define NONE         "\033[m" 
